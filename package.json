@@ -1,0 +1,21 @@
+{
+  "name": "saultstemarieca-stylesheet",
+  "version": "1.0.0",
+  "description": "The source for the stylesheet used on the SaultSteMarie.ca website.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/saultstemarieCA-stylesheet.git"
+  },
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/saultstemarieCA-stylesheet/issues"
+  },
+  "homepage": "https://github.com/cityssm/saultstemarieCA-stylesheet#readme",
+  "devDependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
