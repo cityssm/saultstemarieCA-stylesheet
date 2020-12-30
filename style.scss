@@ -1,6 +1,6 @@
 @import 'normalize.css/normalize';
-
-@import 'colors';
+@import 'utilities/variables';
+@import 'utilities/colors';
 
 /*
  * Site Styles
@@ -8,7 +8,7 @@
 
 
 html {
-  font-family: 'Barlow', sans-serif;
+  font-family: $site-font-family, sans-serif;
 }
 
 
@@ -66,8 +66,7 @@ hr {
 
 
 @import 'utilities/spacing';
-
-@import 'buttons';
+@import 'components/buttons';
 
 
 .alert {
@@ -81,40 +80,13 @@ hr {
 }
 
 
-
-
 #wrapper--site {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-#wrapper--header {
-  margin: 20px 0;
-}
-@media (max-width: 1220px) {
-  #wrapper--header {
-    padding: 0 20px;
-  }
-}
-
-#header_leftCol {
-  float: left;
-  width: 292px;
-  height: 100px;
-  max-width: 100%;
-  background: url("/Cityweb/media/Graphics/logo-withSaultSteMarieStacked.png") top left no-repeat;
-  background-size: contain;
-}
-@media print {
-  #header_leftCol {
-    float: none;
-    color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-}
-
-@import 'template/searchBox';
+@import 'template/siteHeader';
 @import 'template/navigation';
 
 
@@ -123,62 +95,14 @@ hr {
 }
 
 
-@import './home/newsSlider';
+@import 'home/newsSlider';
+@import 'home/quickLinks';
 
 
 .shareThisPage {
   text-align: right;
 }
 
-#frontPage_quickLinksCol {
-  padding: 5px;
-  margin-bottom: 10px;
-  background-color: #007681;
-}
-
-#frontPage_quickLinksCol .popularPagesDiv {
-  display: inline-block;
-  width: 33.3333%;
-  padding: 20px 10px;
-  color: #fff;
-  text-align: center;
-  vertical-align: top;
-  box-sizing: border-box;
-}
-@media (max-width: 650px) {
-  #frontPage_quickLinksCol .popularPagesDiv {
-    display: block;
-    width: 100%;
-  }
-}
-
-#frontPage_quickLinksCol label {
-  font-weight: 600;
-}
-
-#frontPage_quickLinksCol select {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0;
-}
-
-#frontPage_quickLinksCol a {
-  display: inline-block;
-  padding: 5px;
-  font-size: smaller;
-  color: #fff;
-}
-
-#frontPage_quickLinksCol a:focus,
-#frontPage_quickLinksCol a:hover {
-  text-decoration: none;
-  background-color: #005f68;
-}
-
-.clearing {
-  height: 0;
-  clear: both;
-}
 
 #header_rightCol {
   float: right;
@@ -372,28 +296,7 @@ hr {
   margin-top: 1em;
 }
 
-#mainContent_left .data-table {
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-#mainContent_left .data-table th {
-  margin: 0;
-  color: #fff;
-  background-color: #007681;
-  border: 0;
-}
-
-#mainContent_left .data-table td {
-  margin: 0;
-  border: 0;
-  border-bottom: 1px solid #007681;
-}
-
-#mainContent_left .data-table tr:hover td {
-  background-color: #e7fdff;
-}
+@import 'components/dataTable';
 
 #mainContent_left .FormPanel fieldset {
   padding: 0;
@@ -456,136 +359,10 @@ hr {
 
 @import 'template/siteFooter';
 
-#wrapper--search-results {
-  margin: 0 10px;
-}
+@import 'pages/searchResults';
+@import 'pages/sitemap';
 
-#wrapper--search-results h1 {
-  margin-top: 0;
-}
-
-#wrapper--search-results .SearchDialog table {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-#wrapper--search-results .SearchDialog td {
-  padding: 5px;
-}
-@media (max-width: 650px) {
-  #wrapper--search-results .SearchDialog td {
-    display: block;
-    max-width: calc(100vw - 70px);
-  }
-
-  #wrapper--search-results .SearchDialog td:empty {
-    display: none;
-    padding: 0;
-  }
-}
-
-#wrapper--search-results .SearchDialog label {
-  font-weight: 600;
-}
-
-#wrapper--search-results .SearchDialog .TextBoxField {
-  width: 300px;
-  height: auto;
-  max-width: 100%;
-  padding: 5px;
-  border: 1px solid #000;
-}
-
-#wrapper--search-results .SearchDialog .ContentButton {
-  padding: 5px;
-  background-color: #fff;
-  border: 1px solid #000;
-}
-
-#wrapper--search-results .SearchResults .searchResultDiv {
-  margin-bottom: 1em;
-}
-
-#wrapper--search-results .SearchResults .searchResultDiv h2,
-#wrapper--search-results .SearchResults .searchResultDiv p {
-  margin: 0;
-}
-
-#wrapper--search-results .SearchResults .searchResultDiv .relevance {
-  display: none;
-}
-
-#wrapper--search-results .SearchResults .searchResultDiv .resultUrl {
-  padding-right: 2em;
-  font-size: smaller;
-}
-
-#wrapper--search-results .SearchResults .searchResultDiv .creationTime {
-  font-size: smaller;
-  color: #4d4d4d;
-  white-space: nowrap;
-}
-
-#wrapper--search-results .wrapper--pager {
-  text-align: center;
-}
-
-#wrapper--search-results .wrapper--pager a,
-#wrapper--search-results .wrapper--pager strong {
-  display: inline-block;
-  padding: 5px 8px;
-}
-
-#wrapper--search-results .wrapper--pager .pager--next a,
-#wrapper--search-results .wrapper--pager .pager--prev a {
-  color: #fff;
-  background-color: #e38a5b;
-  border: 1px solid #dc6b2f;
-}
-
-#wrapper--search-results .wrapper--pager .pager--next a:focus,
-#wrapper--search-results .wrapper--pager .pager--next a:hover,
-#wrapper--search-results .wrapper--pager .pager--prev a:focus,
-#wrapper--search-results .wrapper--pager .pager--prev a:hover {
-  text-decoration: none;
-  background-color: #e07b45;
-}
-
-#wrapper--search-results .wrapper--pager .pager--next a:active,
-#wrapper--search-results .wrapper--pager .pager--prev a:active {
-  background-color: #dc6b2f;
-}
-
-#wrapper--sitemap {
-  margin: 0 10px;
-  overflow-x: hidden;
-}
-
-#wrapper--sitemap h1 {
-  margin-top: 0;
-}
-
-#wrapper--sitemap ul {
-  margin-left: 0;
-}
-
-.videoContainer {
-  position: relative;
-  height: 0;
-  padding-top: 30px;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-
-.videoContainer embed,
-.videoContainer iframe,
-.videoContainer object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+@import 'components/videoContainer';
 
 .zoneiFrame iframe {
   height: 600px;

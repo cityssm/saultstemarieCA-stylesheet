@@ -1,0 +1,116 @@
+#wrapper--search-results {
+  margin: 0 10px;
+
+  h1 {
+    margin-top: 0;
+  }
+
+}
+
+#wrapper--search-results.SearchDialog {
+
+  table {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  @media (max-width: 650px) {
+    td {
+      display: block;
+      max-width: calc(100vw - 70px);
+    }
+
+    td:empty {
+      display: none;
+      padding: 0;
+    }
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  .TextBoxField {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid $black;
+  }
+
+  .ContentButton {
+    padding: 5px 10px;
+    color: $white;
+    background-color: $ssm-orange;
+    border: 1px solid $orange-darkest;
+
+    &:focus,
+    &:hover {
+      background-color: $orange-darker;
+    }
+
+    &:active {
+      background-color: $orange-darkest;
+    }
+  }
+}
+
+
+#wrapper--search-results .SearchResults {
+
+  .searchResultDiv {
+    margin-bottom: 1em;
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .relevance {
+      display: none;
+    }
+
+    .resultUrl {
+      padding-right: 2em;
+      font-size: smaller;
+    }
+
+    .creationTime {
+      font-size: smaller;
+      color: $grey-darkest;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+#wrapper--search-results .wrapper--pager {
+  text-align: center;
+
+  a,
+  strong {
+    display: inline-block;
+    padding: 5px 8px;
+  }
+
+  .pager--next a,
+  .pager--prev a {
+    color: $white;
+    background-color: $ssm-orange;
+    border: 1px solid $orange-darkest;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: $orange-darker;
+    }
+
+    &:active {
+      background-color: $orange-darkest;
+    }
+  }
+}

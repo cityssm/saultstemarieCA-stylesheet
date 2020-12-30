@@ -1,0 +1,26 @@
+#wrapper--header {
+  margin: 20px 0;
+}
+@media (max-width: 1220px) {
+  #wrapper--header {
+    padding: 0 20px;
+  }
+}
+
+#header_leftCol {
+  float: left;
+  width: 292px;
+  height: 100px;
+  max-width: 100%;
+  background: url('/Cityweb/media/Graphics/logo-withSaultSteMarieStacked.png') top left no-repeat;
+  background-size: contain;
+}
+@media print {
+  #header_leftCol {
+    float: none;
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@import 'searchBox';

@@ -48,7 +48,7 @@
     z-index: 99;
     display: inline-block;
     margin: 0 0.5em;
-    font-family: 'Font Awesome 5 Pro';
+    font-family: $fa5-font-family;
     font-size: xx-large;
     font-style: normal;
     font-weight: 400;
@@ -76,27 +76,27 @@
     padding: 0;
     margin: 10px;
     text-align: center;
-  }
 
-  .rslides_tabs li {
-    display: inline;
-    float: none;
-    margin-right: 5px;
-  }
+    li {
+      display: inline;
+      float: none;
+      margin-right: 5px;
+    }
 
-  .rslides_tabs a {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    overflow: hidden;
-    text-indent: -9999px;
-    background: #f2c8b2;
-    border-radius: 15px;
-    transition: background-color 200ms;
-  }
+    a {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background: #f2c8b2;
+      border-radius: 15px;
+      transition: background-color 200ms;
+    }
 
-  .rslides_tabs .rslides_here a {
-    background: $ssm-orange;
+    .rslides_here a {
+      background: $ssm-orange;
+    }
   }
 
   .rslides .slideCaption {
@@ -126,7 +126,7 @@
     display: block;
     margin-top: 0.5em;
   }
-  
+
   @media (max-width: 650px) {
     .rslides .slideCaption a {
       font-size: large;

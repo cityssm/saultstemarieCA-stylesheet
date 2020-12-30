@@ -5,6 +5,8 @@
 $black: #000;
 $white: #fff;
 
+$grey-darkest: lighten($black, 10%);
+
 /*
  * Colours from the Style Guide
  */
@@ -32,6 +34,7 @@ $red-darkest: darken($ssm-red, 20%);
 $green-darker: darken($ssm-green, 10%);
 $green-darkest: darken($ssm-green, 20%);
 
+$teal-lightest: lighten($ssm-teal, 70%);
 $teal-darker: darken($ssm-teal, 10%);
 $teal-darkest: darken($ssm-teal, 20%);
 

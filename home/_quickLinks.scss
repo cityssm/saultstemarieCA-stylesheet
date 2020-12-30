@@ -1,0 +1,43 @@
+#frontPage_quickLinksCol {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: $ssm-teal;
+
+  .popularPagesDiv {
+    display: inline-block;
+    width: 33.3333%;
+    padding: 20px 10px;
+    color: $white;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    @media (max-width: 650px) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 5px;
+    font-size: smaller;
+    color: $white;
+    
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: $teal-darker;
+    }
+  }
+}
