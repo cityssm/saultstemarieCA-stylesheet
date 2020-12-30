@@ -39,11 +39,11 @@
   a {
     display: block;
     padding: 10px 5px 10px 120px;
-  }
 
-  a:focus,
-  a:hover {
-    text-decoration: none;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   h2 {
