@@ -1,3 +1,55 @@
+html {
+  font-family: $site-font-family, sans-serif;
+}
+
+body {
+  font-size: 16pt;
+
+  @media (max-width: 900px) {
+    font-size: 12pt;
+  }
+}
+
+a {
+  font-weight: 600;
+  color: $orange-darker;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+b,
+h2,
+h3,
+h4,
+strong {
+  font-weight: 600;
+}
+
+ul {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+hr {
+  border-color: $teal-darker;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*
+ * Clear fixes
+ */
+
 .clearfix {
   &::after,
   &::before {
@@ -22,6 +74,10 @@
 .float-right {
   float: right;
 }
+
+/*
+ * Display tweaks
+ */
 
 .offscreen,
 .sr-only {

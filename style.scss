@@ -1,10 +1,6 @@
 @import 'normalize.css/normalize';
-
 @import 'utilities/variables';
 @import 'utilities/colors';
-
-@import 'template/base';
-
 @import 'utilities/base';
 @import 'utilities/spacing';
 
@@ -21,8 +17,6 @@
 #content {
   margin: 10px 0;
 }
-
-
 
 @import 'template/breadcrumb';
 @import 'template/pageContent';
