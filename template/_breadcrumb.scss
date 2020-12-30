@@ -1,0 +1,23 @@
+#pageBreadcrumb {
+  padding-left: 0;
+  margin: 5px 0;
+  font-weight: 600;
+
+  li {
+    display: inline;
+    padding-right: 0.5em;
+
+    &::before {
+      display: inline-block;
+      padding-right: 0.5em;
+      font-family: 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-weight: 400;
+      color: $ssm-orange;
+      text-rendering: auto;
+      content: '\f105';
+      font-variant: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}

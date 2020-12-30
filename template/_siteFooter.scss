@@ -1,0 +1,135 @@
+#wrapper--footer {
+  padding: 20px 20px 80px;
+  margin-top: 15px;
+  color: $white;
+  background: $black url('/Cityweb/media/Graphics/footerConfetti.png') repeat-x bottom center;
+
+  a {
+    color: $white;
+  }
+}
+
+
+@media print {
+  #wrapper--footer {
+    padding: 20px 10px 0;
+    color: $black;
+    background-color: $white;
+    background-image: none;
+    border-top: 1px solid $black;
+  }
+
+  #wrapper--footer a {
+    color: $black;
+  }
+}
+
+#footer--top {
+  min-height: 120px;
+  padding-left: 120px;
+  background: url('/Cityweb/media/Graphics/logo-footer.png') no-repeat top left;
+
+  @media print {
+    min-height: 0;
+    padding: 0;
+    background-image: none;
+  }
+}
+
+
+#footer--top > div > div {
+  width: auto !important;
+  padding-bottom: 15px;
+}
+
+
+#footer--top-right {
+  text-align: right;
+}
+
+
+#google_translate_element {
+  margin-top: 0.5em;
+
+  .goog-te-gadget {
+    font-family: Barlow, sans-serif;
+  }
+
+  .goog-te-gadget-simple {
+    padding: 2px;
+    font-size: medium;
+    border: 0;
+
+    &::before {
+      display: inline-block;
+      font-family: 'Font Awesome 5 Brands';
+      font-style: normal;
+      font-weight: 400;
+      color: $black;
+      text-rendering: auto;
+      content: '\f1a0';
+      font-variant: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  .goog-te-gadget-icon {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .goog-te-menu-value span {
+    color: $black !important;
+    vertical-align: top;
+    border-color: $black !important;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+
+#footer--bottom {
+  margin: 10px 0;
+  font-size: smaller;
+}
+
+#footer--bottom > div > div > div {
+  width: auto !important;
+  padding-bottom: 15px;
+}
+
+#footer--bottom-right {
+  text-align: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline;
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: 1px solid $white;
+  }
+
+  ul li:first-child {
+    border: 0;
+  }
+
+  ul li a {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

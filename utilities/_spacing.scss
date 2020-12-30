@@ -1,0 +1,25 @@
+$space-size: 15px;
+
+.p-1 {
+  padding: $space-size;
+}
+
+.mt-half {
+  margin-top: #{$space-size / 2};
+}
+
+.mt-1 {
+  margin-top: $space-size;
+}
+
+.mt-2 {
+  margin-top: #{$space-size * 2};
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: #{$space-size * 2};
+}

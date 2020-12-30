@@ -1,0 +1,35 @@
+#header--search-box {
+  padding-bottom: 5px;
+  font-weight: 600;
+  text-align: right;
+
+  span {
+    display: inline-block;
+    border: 1px solid $black;
+  }
+
+  input {
+    padding: 5px 0 5px 5px;
+    border: 0;
+  }
+
+  button {
+    padding: 5px;
+    color: $black;
+    background-color: $white;
+    border: 0;
+  }
+
+  @media (max-width: 900px) {
+    label {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #header--popular-searches {
+    display: none;
+  }
+}

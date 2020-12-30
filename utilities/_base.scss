@@ -1,0 +1,43 @@
+.clearfix {
+  &::after,
+  &::before {
+    display: table;
+    content: '';
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.offscreen,
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.d-none {
+  display: none;
+}
+
+@media print {
+  .hidden-print {
+    display: none;
+  }
+}
+
+.to-delete {
+  display: none !important;
+}

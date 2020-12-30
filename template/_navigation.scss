@@ -1,0 +1,30 @@
+#wrapper--nav {
+  margin: 5px 0;
+
+  ul {
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    background-color: $ssm-teal;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 0 5px;
+    color: $white;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: $teal-darker;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/*
+ * Base Colors
+ */
+
+$black: #000;
+$white: #fff;
+
+/*
+ * Colours from the Style Guide
+ */
+
+// Primary Palette
+$ssm-orange: #dc6b2f;
+$ssm-red: #ab2328;
+$ssm-green: #6ba539;
+
+// Secondary Colors
+$ssm-teal: #007681;
+$ssm-purple: #72246c;
+$ssm-brown: #633231;
+
+/*
+ * Shades
+ */
+
+$orange-darker: darken($ssm-orange, 10%);
+$orange-darkest: darken($ssm-orange, 20%);
+
+$red-darker: darken($ssm-red, 10%);
+$red-darkest: darken($ssm-red, 20%);
+
+$green-darker: darken($ssm-green, 10%);
+$green-darkest: darken($ssm-green, 20%);
+
+$teal-darker: darken($ssm-teal, 10%);
+$teal-darkest: darken($ssm-teal, 20%);
+
+$purple-darker: darken($ssm-purple, 5%);
+$purple-darkest: darken($ssm-purple, 10%);
+
+$brown-darker: darken($ssm-brown, 10%);
+$brown-darkest: darken($ssm-brown, 20%);

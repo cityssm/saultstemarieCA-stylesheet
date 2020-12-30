@@ -1,0 +1,139 @@
+.responsiveSlidesDiv {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .rslides {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .rslides li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  .rslides img {
+    width: 100%;
+    height: auto;
+    max-height: 525px;
+    border: 0;
+    object-fit: cover;
+
+    @media (max-width: 1200px) {
+      height: 43.75vw;
+    }
+  }
+
+  .rslides1_nav {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    z-index: 99;
+    display: inline-block;
+    margin: 0 0.5em;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 400;
+    color: $white;
+    text-decoration: none;
+    text-rendering: auto;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .rslides1_nav.next {
+    right: 0;
+    left: auto;
+  }
+
+  .rslides1_nav.prev::before {
+    content: '\f104';
+  }
+
+  .rslides1_nav.next::before {
+    content: '\f105';
+  }
+
+  .rslides_tabs {
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 5px;
+  }
+
+  .rslides_tabs a {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: #f2c8b2;
+    border-radius: 15px;
+    transition: background-color 200ms;
+  }
+
+  .rslides_tabs .rslides_here a {
+    background: $ssm-orange;
+  }
+
+  .rslides .slideCaption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding: 15px;
+    margin-bottom: 0;
+    color: $white;
+    text-shadow: 1px 1px $ssm-orange;
+    background-color: rgba($ssm-orange, 0.8);
+  }
+
+  .rslides .slideCaption:hover {
+    background-color: $ssm-orange;
+  }
+
+  .rslides .slideCaption a {
+    font-size: xx-large;
+    font-weight: 800;
+    color: $white;
+  }
+
+  .rslides .slideCaption .slideCaption-summary {
+    display: block;
+    margin-top: 0.5em;
+  }
+  
+  @media (max-width: 650px) {
+    .rslides .slideCaption a {
+      font-size: large;
+    }
+
+    .rslides .slideCaption .slideCaption-summary {
+      display: none;
+    }
+  }
+}
