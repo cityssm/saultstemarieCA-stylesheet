@@ -6,11 +6,9 @@
  * Site Styles
  */
 
-
 html {
   font-family: $site-font-family, sans-serif;
 }
-
 
 body {
   font-size: 16pt;
@@ -31,7 +29,6 @@ a {
   }
 }
 
-
 b,
 h2,
 h3,
@@ -40,45 +37,28 @@ strong {
   font-weight: 600;
 }
 
-
 ul {
   margin-top: 0;
   margin-left: 0;
 }
 
-
 hr {
   border-color: #005f68;
 }
 
-
 @import 'utilities/base';
-
 
 .text-nowrap {
   white-space: nowrap;
 }
 
-
 .text-center {
   text-align: center;
 }
 
-
 @import 'utilities/spacing';
 @import 'components/buttons';
-
-
-.alert {
-  border-style: solid;
-  border-width: 1px;
-}
-
-.alert-teal {
-  background-color: #b4f9ff;
-  border-color: $ssm-teal;
-}
-
+@import 'components/alerts';
 
 #wrapper--site {
   width: 1200px;
@@ -89,18 +69,12 @@ hr {
 @import 'template/siteHeader';
 @import 'template/navigation';
 
-
 #content {
   margin: 10px 0;
 }
 
 @import 'home/newsSlider';
 @import 'home/quickLinks';
-
-.shareThisPage {
-  text-align: right;
-}
-
 
 #header_rightCol {
   float: right;
@@ -178,6 +152,7 @@ hr {
 
 #mainContent_left .shareThisPage {
   margin-top: 1em;
+  text-align: right;
 }
 
 @import 'components/dataTable';
@@ -235,12 +210,4 @@ hr {
   font-weight: 600;
 }
 
-.MediaGalleryFolderTree,
-.MediaLibrarySort {
-  display: none;
-}
-
-.galleryTable {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+@import 'components/mediaGallery';

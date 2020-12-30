@@ -9,7 +9,6 @@
   }
 }
 
-
 @media print {
   #wrapper--footer {
     padding: 20px 10px 0;
@@ -36,23 +35,20 @@
   }
 }
 
-
 #footer--top > div > div {
   width: auto !important;
   padding-bottom: 15px;
 }
 
-
 #footer--top-right {
   text-align: right;
 }
-
 
 #google_translate_element {
   margin-top: 0.5em;
 
   .goog-te-gadget {
-    font-family: Barlow, sans-serif;
+    font-family: 'Barlow', sans-serif;
   }
 
   .goog-te-gadget-simple {
@@ -62,7 +58,7 @@
 
     &::before {
       display: inline-block;
-      font-family: 'Font Awesome 5 Brands';
+      font-family: $fa5-brands-font-family;
       font-style: normal;
       font-weight: 400;
       color: $black;
@@ -97,7 +93,6 @@
     text-decoration: none;
   }
 }
-
 
 #footer--bottom {
   margin: 10px 0;

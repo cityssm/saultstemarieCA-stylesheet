@@ -1,6 +1,7 @@
 #wrapper--header {
   margin: 20px 0;
 }
+
 @media (max-width: 1220px) {
   #wrapper--header {
     padding: 0 20px;
@@ -15,6 +16,7 @@
   background: url('/Cityweb/media/Graphics/logo-withSaultSteMarieStacked.png') top left no-repeat;
   background-size: contain;
 }
+
 @media print {
   #header_leftCol {
     float: none;
