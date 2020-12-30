@@ -1,0 +1,58 @@
+#zone_rightFront {
+  float: right;
+  width: 80%;
+  padding-left: 15px;
+  box-sizing: border-box;
+
+  @media (max-width: 900px) {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+#zone_rightFront .frontPageTile {
+  margin-bottom: 1em;
+
+  @media (max-width: 900px) {
+    margin: 0 10px 1em;
+  }
+
+  div {
+    min-height: 70px;
+    margin: 2px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 100px 60px;
+  }
+
+  div:focus-within,
+  div:hover {
+    background-color: $orange-lightest;
+  }
+
+  div:focus-within a,
+  div:hover a {
+    color: $orange-darkest;
+  }
+
+  a {
+    display: block;
+    padding: 10px 5px 10px 120px;
+  }
+
+  a:focus,
+  a:hover {
+    text-decoration: none;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: larger;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+  }
+}

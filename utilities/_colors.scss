@@ -25,6 +25,7 @@ $ssm-brown: #633231;
  * Shades
  */
 
+$orange-lightest: lighten($ssm-orange, 45%);
 $orange-darker: darken($ssm-orange, 10%);
 $orange-darkest: darken($ssm-orange, 20%);
 

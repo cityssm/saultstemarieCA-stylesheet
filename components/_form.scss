@@ -1,0 +1,31 @@
+#mainContent_left .FormPanel  {
+
+  fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  legend {
+    font-weight: 600;
+  }
+
+  input[type='text'],
+  textarea {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    margin-right: 10px;
+  }
+
+  .CaptchaTable td {
+    padding: 0;
+  }
+
+  .CaptchaTextBox {
+    width: 6em;
+  }
+}
