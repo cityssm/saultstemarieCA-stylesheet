@@ -1,0 +1,28 @@
+#zone_leftPage {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media print, (max-width: 900px) {
+  #zone_leftPage {
+    float: none;
+    width: 100%;
+  }
+}
+
+#zone_leftPage h2 {
+  margin-top: 0;
+}
+
+#zone_leftPage ul {
+  padding: 0;
+  margin: 0;
+}
+
+#zone_leftPage li {
+  padding-bottom: 0.5em;
+  margin: 0;
+  list-style: none;
+}

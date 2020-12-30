@@ -1,0 +1,25 @@
+#mainContent_right {
+  float: right;
+  width: 30%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  font-size: smaller;
+  box-sizing: border-box;
+}
+
+#mainContent_right h2 {
+  margin-top: 0;
+}
+
+@media print, (max-width: 650px) {
+  #mainContent_right {
+    float: none;
+    width: 100%;
+    font-size: medium;
+  }
+
+  #mainContent_right h2 {
+    margin-top: 15px;
+  }
+}
