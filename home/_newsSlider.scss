@@ -89,13 +89,13 @@
       height: 9px;
       overflow: hidden;
       text-indent: -9999px;
-      background: #f2c8b2;
+      background: $orange-lighter;
       border-radius: 15px;
       transition: background-color 200ms;
     }
 
     .rslides_here a {
-      background: $ssm-orange;
+      background: $orange-darker;
     }
   }
 
@@ -108,12 +108,12 @@
     padding: 15px;
     margin-bottom: 0;
     color: $white;
-    text-shadow: 1px 1px $ssm-orange;
-    background-color: rgba($ssm-orange, 0.8);
+    text-shadow: 1px 1px $orange-dark;
+    background-color: rgba($orange-dark, 0.9);
   }
 
   .rslides .slideCaption:hover {
-    background-color: $ssm-orange;
+    background-color: $orange-dark;
   }
 
   .rslides .slideCaption a {
