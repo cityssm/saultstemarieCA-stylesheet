@@ -1,0 +1,120 @@
+@import 'normalize.css/normalize';
+@import 'utilities/variables';
+@import 'utilities/colors';
+@import 'utilities/base';
+@import 'utilities/spacing';
+
+$width-tablet: 900px;
+
+body {
+  max-width: 35em;
+  margin: 0 auto;
+  font-size: 16pt;
+
+  @media (max-device-width: $width-tablet) {
+    font-size: 12pt;
+  }
+}
+
+@import 'components/buttons';
+@import 'components/alerts';
+
+.calendarTable {
+
+  margin: 0 auto;
+
+  th {
+    padding: 0.25em;
+    color: $white;
+    background-color: $ssm-teal;
+  }
+
+  td {
+    width: 2em;
+    padding: 0;
+    text-align: right;
+    border: 1px solid #ccc;
+  }
+
+  td a,
+  td span {
+    display: block;
+    padding: 0.25em;
+
+    &.selected {
+      text-decoration: underline;
+      background-color: $orange-lightest;
+    }
+  }
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  legend {
+   font-weight: 600;
+  }
+}
+
+/*
+ * BOOTSTRAP-LIKE SETTINGS
+ */
+
+.row {
+  width: 100%;
+  zoom: 1;
+
+  &::before,
+  &::after {
+    display: table;
+    content: '';
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  .c4 {width: 31.33%}
+  .c5 {width: 39.66%}
+  .c6 {width: 48%}
+  .c7 {width: 56.33%}
+
+  .c4,
+  .c5,
+  .c6,
+  .c7 {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .end {
+    float: right !important;
+  }
+}
+
+/*
+ * PARKS
+ */
+
+#wrapper--parks {
+
+  #featureFilterDiv p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+.parkDiv,
+.meetingDiv {
+  padding: 0 10px;
+  border-top: 1px solid $orange-darker;
+
+  &:hover {
+    background-color: $orange-lightest;
+  }
+}
