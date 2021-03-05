@@ -3,7 +3,7 @@
   font-weight: 600;
   text-align: right;
 
-  span {
+  span:not(.fas) {
     display: inline-block;
     border: 1px solid $black;
   }
